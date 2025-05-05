@@ -13,8 +13,8 @@ int main(int argc, char* argv[]) {
     double α = (argc > 3) ? atof(argv[3]) : 0.5;
     double β = (argc > 4) ? atof(argv[4]) : 0.1;
 
-    if (n <= 0 || c <= 0  || α < 0.0 || α > 1.0 || β < 0.0 || β > 1.0) {
-        cerr << "Invalid arguments. Ensure n > 0, c > 0, and 0 ≤ α, β ≤ 1.\n";
+    if (n <= 0 || c <= 0  || α < 0.0 || α > 1.0 || β < -1.0 || β > 1.0) {
+        cerr << "Invalid arguments. Ensure n > 0, c > 0, and 0 ≤ α ≤ 1, and -1 ≤ β ≤ 1.\n";
         return 1;
     }
 
